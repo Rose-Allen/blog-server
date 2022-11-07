@@ -23,7 +23,7 @@ app.use("/auth", require("./routes/auth"));
 // app.post("/posts", (req, res) => {});
 
 // app.delete("/posts:id", (req, res) => {});
-
-app.listen(3004, () => {
+const PORT = process.env.PORT ?? 3004;
+app.listen(PORT, () => {
   console.log("Server is running on http://localhost:3004");
 });
